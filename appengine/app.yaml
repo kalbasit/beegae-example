@@ -1,0 +1,19 @@
+application: beegae-example
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+  # Assets
+  - url: /js
+    static_dir: static/js
+
+  - url: /css
+    static_dir: static/js
+
+  - url: /img
+    static_dir: static/js
+
+  # Go App
+  - url: /.*
+    script: _go_app
